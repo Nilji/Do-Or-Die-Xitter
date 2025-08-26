@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="color-scheme" content="light dark" />
-  <title>News • NewsSite</title>
+  <title>News • Do Or Die Xitter</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -13,7 +13,7 @@
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="./">NewsSite</a>
+      <a class="brand" href="./">Do Or Die Xitter</a>
       <nav class="nav">
         <a class="nav-link" href="index.html">Home</a>
         <a class="nav-link active" href="main.html">News</a>
@@ -26,9 +26,45 @@
     <section class="section">
       <div class="container">
         <h1 class="page-title">News</h1>
-        <p class="muted">The news section is currently blank. You can populate it with articles later.</p>
+        <p class="muted">Latest tips and guidance. We added official download and update information.</p>
         <div class="news-grid">
-          <!-- Intentionally left blank for now -->
+          <article class="news-article">
+            <h3>No address found? Basic connectivity checks</h3>
+            <p>If you see a "No address found" or DNS error while browsing, try these steps:</p>
+            <ul>
+              <li>Check your internet connection (Wi‑Fi/Ethernet) and restart your router.</li>
+              <li>Run Windows Network Troubleshooter: Settings → Network & Internet → Advanced network settings → Network troubleshooter.</li>
+              <li>Reset DNS: open Command Prompt as Administrator and run: <code>ipconfig /flushdns</code> then <code>ipconfig /renew</code>.</li>
+              <li>Change DNS to a public resolver (e.g., 1.1.1.1 or 8.8.8.8) in adapter settings.</li>
+            </ul>
+            <p class="note">Tip: Windows 10 22H2 is recommended for many control panels and tools.</p>
+          </article>
+
+          <article class="news-article">
+            <h3>How to get Windows 10 22H2 (official)</h3>
+            <p>Use the official Microsoft Media Creation Tool to upgrade or create installation media.</p>
+            <div class="link-row">
+              <a class="btn primary" href="https://www.microsoft.com/software-download/windows10" target="_blank" rel="noopener">Microsoft Windows 10 download</a>
+              <a class="btn outline" href="https://support.microsoft.com/windows/create-installation-media-for-windows-10-31ce2444-7de3-818c-618f-4fd2a4c3b725" target="_blank" rel="noopener">Create installation media guide</a>
+            </div>
+            <p class="note">Download, run the tool, and choose what to keep during setup (keep files/apps, keep files only, or remove everything). Follow on-screen steps and complete out-of-box setup (language, sign‑in, preferences).</p>
+          </article>
+
+          <article class="news-article">
+            <h3>How to update drivers (safe methods)</h3>
+            <p>Use built‑in or official tools. Avoid pirated software and cracks.</p>
+            <ul>
+              <li>Windows Update: Settings → Windows Update → Check for updates → Optional updates → Driver updates.</li>
+              <li>Device Manager: Right‑click Start → Device Manager → Right‑click device → Update driver.</li>
+              <li>Vendor tools: Use official apps like NVIDIA GeForce Experience, AMD Adrenalin, Intel Driver & Support Assistant, or your PC maker's utility.</li>
+            </ul>
+            <div class="link-row">
+              <a class="btn secondary" href="https://www.nvidia.com/en-us/geforce/geforce-experience/" target="_blank" rel="noopener">NVIDIA</a>
+              <a class="btn secondary" href="https://www.amd.com/en/technologies/software.html" target="_blank" rel="noopener">AMD</a>
+              <a class="btn secondary" href="https://www.intel.com/content/www/us/en/support/detect.html" target="_blank" rel="noopener">Intel</a>
+            </div>
+            <p class="note">Security note: Do not disable antivirus to install untrusted software. Use official sources only.</p>
+          </article>
         </div>
       </div>
     </section>
