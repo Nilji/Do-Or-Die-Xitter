@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light dark" />
+  <title>Home • NewsSite</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="./">NewsSite</a>
+      <nav class="nav">
+        <a class="nav-link active" href="index.html">Home</a>
+        <a class="nav-link" href="main.html">News</a>
+        <button class="theme-toggle" aria-label="Toggle theme" title="Toggle theme">☀️</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1 class="headline">Stay informed with a clean, modern news UI</h1>
+        <p class="subhead">This is a GitHub Pages-ready template. The News tab is scaffolded and currently blank so you can populate it later.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="main.html">Go to News</a>
+          <a class="btn" href="#features">Learn more</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="container grid features">
+        <article class="card">
+          <h3>Fast</h3>
+          <p>Static, lightweight, and ready to deploy on GitHub Pages in seconds.</p>
+        </article>
+        <article class="card">
+          <h3>Responsive</h3>
+          <p>Adaptive layout that looks great on phones, tablets, and desktops.</p>
+        </article>
+        <article class="card">
+          <h3>Accessible</h3>
+          <p>Semantic HTML, high contrast, and reduced motion preferences supported.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> NewsSite</span>
+      <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear().toString();
+  </script>
+</body>
+</html>
+
+
